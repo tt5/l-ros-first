@@ -1,6 +1,8 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
-package_name = 'first'
+package_name = 'publisher'
 
 setup(
     name=package_name,
@@ -20,7 +22,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = first.publisher_member_function:main',
+            'talker = publisher.publisher_member_function:main',
         ],
     },
 )
